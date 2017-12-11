@@ -1,0 +1,35 @@
+<head>
+    <title>
+LL Similarity page
+    </title>
+    <meta charset="UTF-8">
+</head>
+<style type="text/css">
+    body {
+        font-family:sans-serif;
+    }
+    table.wfmt {
+        border: 1px solid black;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 40px;
+    }
+    th, td {
+        border: 1px solid black;
+        font-size: 15px;
+        max-width: 100%;
+        white-space: nowrap;
+    }
+    table.wfmt td.center
+    {
+        text-align: center;
+    }
+    table.wfmt td.left {
+        text-align: left;
+    }
+    table.wfmt td.right {
+        text-align: right;
+    }
+.wfmt { margin: 0px auto; }
+</style>
