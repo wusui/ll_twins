@@ -1,6 +1,6 @@
 import json
 from GetMatchData import CATEGORIES
-from MakeHtmlTable import JSON_FILENAME_FMT
+from GetMatchData import JSON_FILENAME_FMT
 from MakeHtmlTable import convert_wrapper
 
 def get_table_counts():
@@ -64,5 +64,5 @@ def gen_index_html(season):
         f.write(output)
         
 if __name__ == "__main__":
-    season = 75
+    season = 74
     gen_index_html(season)

@@ -1,6 +1,7 @@
 import json
 from pprint import pprint
 from GetMatchData import CATEGORIES
+from GetMatchData import JSON_FILENAME_FMT
 from GetMatchData import gen_json
 
 xswitch = {"lower": lambda x : x.lower(),
@@ -8,7 +9,6 @@ xswitch = {"lower": lambda x : x.lower(),
            "capitalize": lambda x : x.title(),
            "nothing": lambda x : x}
 blankval = {"space": " ", "underscore": "_"}
-JSON_FILENAME_FMT = 'll_day_%d.json'
 
 def convert(txt, ulval, bval):
     return blankval[bval].join(xswitch[ulval](txt).split('_'))

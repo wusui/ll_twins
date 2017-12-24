@@ -4,6 +4,7 @@ from ParseAllRundles import get_allrundles
 from ParseRundleDay import get_results_for_rundle_day
 
 CATEGORIES = ['perfect_defense', 'other_matches', 'forfeits']
+JSON_FILENAME_FMT = 'll_day_%d.json'
 def get_all_matches(season, verbose=False, mday=0):
     perfval = ['0(0)', '0(1)', '1(2)', '2(3)', '4(4)', '6(5)', '9(6)']
     ret_val = {}
@@ -45,7 +46,6 @@ def gen_json(league, fname, day):
         json_string = json.dumps(rval)
         print(json_string, file=f)
 
-from MakeHtmlTable import JSON_FILENAME_FMT       
 if __name__ == "__main__":
     day = 7
     league = 75
